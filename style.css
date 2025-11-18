@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#amarelo{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#azul{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#verde{
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    cursor: pointer;
+}

@@ -49,20 +49,20 @@
 
 // HTML
 
-    // <button id="btn-1">img 1</button>
-    // <button id="btn-2">img 2</button>
+// <button id="btn-1">img 1</button>
+// <button id="btn-2">img 2</button>
 
-    // <img
-    //   id="img-1"
-    //   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UKw7RvpWVOywWdNFUzwLHH2fPZiEB-tg7g&s"
-    //   alt=""
-    // />
+// <img
+//   id="img-1"
+//   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5UKw7RvpWVOywWdNFUzwLHH2fPZiEB-tg7g&s"
+//   alt=""
+// />
 
-    // <img
-    //   id="img-2"
-    //   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQza--_S4Bd4RIRHdI9JMNYfxJ26cnx8eyQ&s"
-    //   alt=""
-    // />
+// <img
+//   id="img-2"
+//   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQza--_S4Bd4RIRHdI9JMNYfxJ26cnx8eyQ&s"
+//   alt=""
+// />
 
 //  JS
 
@@ -95,7 +95,6 @@
 
 // -------------------------------------------------------------------------
 
-
 // 5
 
 // let texto = document.getElementById('texto');
@@ -117,28 +116,98 @@
 
 // --------------------------------------------------------------------------
 
-// 6
+//
+// let campo = document.getElementById('campo');
+// let botao = document.getElementById('botao');
 
-let campo = document.getElementById('campo');
-let botao = document.getElementById('botao');
+// botao.addEventListener('click', () => {
 
-botao.addEventListener('click', ()=>{
+//     let ul = document.getElementById('ul');
 
-    let ul = document.getElementById('ul');
+//     let li = document.createElement('li');
 
-    let li = document.createElement('li');
+//     li.textContent = campo.value;
 
-    li = document.createTextNode(campo.value);
+//     ul.appendChild(li);
 
-    ul.appendChild = (li);
+//     console.log(li)
+// });
 
-    ul.textContent = (li);
+// 7
 
-    console.log(li)
+// let paragrafo = document.getElementById('paragrafo');
+// let clear = document.getElementById('clear');
+// let negrito = document.getElementById('negrito');
+// let italico = document.getElementById('italico');
+// let sublinhado = document.getElementById('sublinhado');
 
+// negrito.addEventListener('click', () =>{
+//     paragrafo.style.fontWeight = "bold"
+// })
 
+// italico.addEventListener('click', () =>{
+//     paragrafo.style.fontStyle = "italic"
+// })
+
+// sublinhado.addEventListener('click', () =>{
+//     paragrafo.style.textDecoration = "underline"
+// })
+
+// clear.addEventListener('click', () =>{
+//     paragrafo.style = "none";
+// });
+
+// 8)
+
+// let botao = document.getElementById('btn');
+// let none = document.getElementById('padrao');
+
+// botao.addEventListener('click', ()=>{
+//     none.classList.toggle('dark');
+// });
+
+// 9
+
+// let formulario = document.getElementById("formulario");
+// let botao = document.getElementById("botao");
+// let paragrafo = document.getElementById('paragrafo');
+
+// botao.addEventListener("click", () => {
+//     if (formulario.value == ""){
+//         paragrafo.style.color = "red";
+//         paragrafo.innerHTML = "Erro, campo está vazio!";
+//         document.getElementById('formulario').focus();
+//     }
+//     else{
+//         paragrafo.style.color = "green";
+//         paragrafo.innerHTML = "Formulário enviado com sucesso!"
+//     }
+// });
+
+let amarelo = document.getElementById("amarelo");
+let azul = document.getElementById("azul");
+let verde = document.getElementById("verde");
+
+amarelo.addEventListener("mousemove", () => {
+    amarelo.style.backgroundColor = "violet";
 });
 
+amarelo.addEventListener("mouseleave", () => {
+    amarelo.style.backgroundColor = "yellow";
+});
 
+azul.addEventListener("mousemove", () => {
+    azul.style.backgroundColor = "violet";
+});
 
+azul.addEventListener("mouseleave", () => {
+    azul.style.backgroundColor = "blue";
+});
 
+verde.addEventListener("mousemove", () => {
+    verde.style.backgroundColor = "violet";
+});
+
+verde.addEventListener("mouseleave", () => {
+    verde.style.backgroundColor = "green";
+});
